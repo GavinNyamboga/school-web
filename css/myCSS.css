@@ -5,12 +5,17 @@ body{
 .header-1{
   background-color: #537db0;
 }
+.partB{
+  margin-top: 50px;
+  padding-top: 80px;
+}
 section .section-title {
     text-align: center;
     color: #407ead;
     margin-bottom: 50px;
     text-transform: uppercase;
 }
+
 
 #team .card {
     border: none;
