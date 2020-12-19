@@ -1,0 +1,22 @@
+body{
+  background-color: #8cb1de;
+}
+
+.header-1{
+  background-color: #537db0;
+}
+section .section-title {
+    text-align: center;
+    color: #407ead;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#team .card {
+    border: none;
+    background: #ffffff;
+}
+
+footer{
+  background-color: #1b405c;
+}
