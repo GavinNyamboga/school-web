@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/customstyles.css">
+	<link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+	<title>HOME</title>
+	<style type="text/css">
+		h2{
+			width: 100%;
+			text-align: center;
+			border-bottom: 1px solid #000;
+			line-height: 1em;
+			margin: 40px 0 20px;
+		}
+		h2 span{
+			background:#1aa2e5;
+			color: white;
+			padding: 0 10px;
+		}
+		.dropdown:hover .dropdown-menu{
+			display: block;
+			margin-top: 0;
+		}
+		.dropdown-item{
+			color: blue !important;
+		}
+		*{
+			box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+		}
+		body{
+			font-family: Helvetica;
+			-webkit-font-smoothing: antialiased;
+			background: rgba( 71, 147, 227, 1);
+		}
+		h2{
+			text-align: center;
+			font-size: 18px;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			color: white;
+			padding: 30px 0;
+		}
+
+		/* Table Styles */
+
+		.table-wrapper{
+			margin: 10px 70px 70px;
+			box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+		}
+
+		.fl-table {
+			border-radius: 5px;
+			font-size: 12px;
+			font-weight: normal;
+			border: none;
+			border-collapse: collapse;
+			width: 100%;
+			max-width: 100%;
+			white-space: nowrap;
+			background-color: white;
+		}
+
+		.fl-table td, .fl-table th {
+			text-align: center;
+			padding: 8px;
+		}
+
+		.fl-table td {
+			border-right: 1px solid #f8f8f8;
+			font-size: 12px;
+		}
+
+		.fl-table thead th {
+			color: #ffffff;
+			background: #4FC3A1;
+		}
+
+
+		.fl-table thead th:nth-child(odd) {
+			color: #ffffff;
+			background: #324960;
+		}
+
+		.fl-table tr:nth-child(even) {
+			background: #F8F8F8;
+		}
+
+		/* Responsive */
+
+		@media (max-width: 767px) {
+			.fl-table {
+				display: block;
+				width: 100%;
+			}
+			.table-wrapper:before{
+				content: "Scroll horizontally >";
+				display: block;
+				text-align: right;
+				font-size: 11px;
+				color: white;
+				padding: 0 0 10px;
+			}
+			.fl-table thead, .fl-table tbody, .fl-table thead th {
+				display: block;
+			}
+			.fl-table thead th:last-child{
+				border-bottom: none;
+			}
+			.fl-table thead {
+				float: left;
+			}
+			.fl-table tbody {
+				width: auto;
+				position: relative;
+				overflow-x: auto;
+			}
+			.fl-table td, .fl-table th {
+				padding: 20px .625em .625em .625em;
+				height: 60px;
+				vertical-align: middle;
+				box-sizing: border-box;
+				overflow-x: hidden;
+				overflow-y: auto;
+				width: 120px;
+				font-size: 13px;
+				text-overflow: ellipsis;
+			}
+			.fl-table thead th {
+				text-align: left;
+				border-bottom: 1px solid #f7f7f9;
+			}
+			.fl-table tbody tr {
+				display: table-cell;
+			}
+			.fl-table tbody tr:nth-child(odd) {
+				background: none;
+			}
+			.fl-table tr:nth-child(even) {
+				background: transparent;
+			}
+			.fl-table tr td:nth-child(odd) {
+				background: #F8F8F8;
+				border-right: 1px solid #E6E4E4;
+			}
+			.fl-table tr td:nth-child(even) {
+				border-right: 1px solid #E6E4E4;
+			}
+			.fl-table tbody td {
+				display: block;
+				text-align: center;
+			}
+		}
+		.result{
+			margin:20px 10px 20px 10px;
+			background:black;
+			color: white;
+			text-align: center;
+			border-radius:24pxs;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="beforenav">
+			<div class="example">
+				<nav class="navbar navbar-expand-md">
+					<!-- Brand -->
+					<a class="navbar-brand" href="#">
+						Kisii<span>School</span>
+					</a>
+
+					<!-- Toggler/collapsibe Button -->
+					<button class="navbar-toggle navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+						<span class="navbar-toggler-icon icon-bar" style="color: white">MENU</span>
+					</button>
+
+					<!-- Navbar links -->
+					<div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+						<ul class="navbar-nav mx-auto">
+							<li class="nav-item"><a href="homepage.html" class="nav-link">Home</a></li>
+							<li class="active nav-item"><a href="about.html" class="nav-link">About</a></li>
+							<li class="nav-item"><a href="boardMembers.html" class="nav-link">School Board</a></li>
+							<li class="nav-item"><a href="results.html" class="nav-link">Results</a></li>
+							<li class="nav-item"><a href="classes.html" class="nav-link">Classes</a></li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+									Departments
+								</a>
+								<div class="dropdown-menu">
+									<a href="#" class="dropdown-item">Mathematics</a>
+									<a href="#" class="dropdown-item">English</a>
+									<a href="#" class="dropdown-item">Humanities</a>
+									<a href="#" class="dropdown-item">Kiswahili</a>
+									<a href="#" class="dropdown-item">Physics</a>
+									<a href="#" class="dropdown-item">Biology</a>
+									<a href="#"class="dropdown-item">Chemistry</a>
+									<a href="#" class="dropdown-item">Technical</a>
+									<a href="#" class="dropdown-item">Games</a>
+								</div>
+							</li>
+
+							<li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+						</ul>
+						<ul class="navbar-nav">
+							<div class="social-links text-center text-md-right pt-3 pt-md-0">
+								<a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+								<a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+								<a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+								<a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+								<a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+							</div>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<div class="row justify-content-between">
+				<div class="col-md-6 offset-md-3">
+					<h3 class="motto">Our Motto:<span>Strive For Excellence</span></h3>
+				</div>
+			</div>
+		</div>
+		<br><br>
+		<hr class="line">
+		<br><br><br>
+		<div class="row">
+			<div class="col-md-6 offset-md-3">
+				<p>Over the Years our results have shown  a <span style="color: green; font-size: 34px; ">Positive growth</span></p>
+			</div>
+			<div class="col-md-6">
+				<img src="img/results.png">
+			</div>
+			<div class="col-md-6">
+				<div class="table-wrapper">
+					<table class="fl-table">
+						<thead>
+							<tr>
+								<th>Header 1</th>
+								<th>Header 2</th>
+								<th>Header 3</th>
+								<th>Header 4</th>
+								<th>Header 5</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Content 1</td>
+								<td>Content 1</td>
+								<td>Content 1</td>
+								<td>Content 1</td>
+								<td>Content 1</td>
+							</tr>
+							<tr>
+								<td>Content 2</td>
+								<td>Content 2</td>
+								<td>Content 2</td>
+								<td>Content 2</td>
+								<td>Content 2</td>
+							</tr>
+							<tr>
+								<td>Content 3</td>
+								<td>Content 3</td>
+								<td>Content 3</td>
+								<td>Content 3</td>
+								<td>Content 3</td>
+							</tr>
+							<tr>
+								<td>Content 4</td>
+								<td>Content 4</td>
+								<td>Content 4</td>
+								<td>Content 4</td>
+								<td>Content 4</td>
+							</tr>
+
+							<tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="result">
+							<h3>CHECK RESULTS PER SUBJECT HERE</h3>
+						</div>
+					</div>
+					<div class="col-md-8 offset-md-2">
+						<div id="accordion">
+
+							<div class="card">
+								<div class="card-header bg-success" >
+									<a class="card-link" data-toggle="collapse" href="#wildlife" style="color: #f8f9fa;">
+										MATHEMATICS
+									</a>
+								</div>
+								<div id="wildlife" class="collapse show" data-parent="#accordion">
+									<div class="card-body">
+										<div class="row container-fluid">
+											<div class="col-md-3">
+												1
+											</div>
+											<div class="col-md-3">
+												2
+											</div>
+											<div class="col-md-3">
+												3
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="card" style="margin-top: -20px;">
+								<div class="card-header bg-primary">
+									<a class="collapsed card-link " data-toggle="collapse" href="#marinelife" >
+										ENGLISH
+									</a>
+								</div>
+								<div id="marinelife" class="collapse" data-parent="#accordion">
+									<div class="card-body">
+										<div class="row">
+											<div class="col-md-3">
+												1
+											</div>
+											<div class="col-md-3">
+												2
+											</div>
+											<div class="col-md-3">
+												3
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="card" style="margin-top: -20px;">
+								<div class="card-header bg-warning">
+									<a class="collapsed card-link" data-toggle="collapse" href="#waterfalls">
+										KISWAHILI
+									</a>
+								</div>
+								<div id="waterfalls" class="collapse" data-parent="#accordion">
+									<div class="card-body">
+										<div class="row">
+											<div class="col-md-3">
+												1
+											</div>
+											<div class="col-md-3">
+												2
+											</div>
+											<div class="col-md-3">
+												3
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card" style="margin-top: -20px;">
+								<div class="card-header bg-dark">
+									<a class="collapsed card-link " data-toggle="collapse" href="#sceneries">
+										PHYSICS
+									</a>
+								</div>
+								<div id="sceneries" class="collapse" data-parent="#accordion">
+									<div class="card-body">
+										<div class="row">
+											<div class="col-md-3">
+												1
+											</div>
+											<div class="col-md-3">
+												2
+											</div>
+											<div class="col-md-3">
+												3
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<br><br>
+				<footer id="footer" style="background-color: black !important!">
+
+					<div class="footer-top">
+						<div class="container-fluid">
+							<div class="row">
+
+								<div class="col-auto">
+									<h3>Kisii School</h3>
+									<p>
+										Kisii Central Subcounty <br>
+										Kisii County<br>
+										Kisii <br><br>
+										<strong>Phone:</strong> +254 XXXXXXXXX<br>
+										<strong>Email:</strong> info@example.com<br>
+									</p>
+								</div>
+								<div class="col"></div>
+								<div class="col-auto">
+									<h4>Useful Links</h4>
+									<ul>
+										<li><i class="bx bx-chevron-right"></i> <a href="homepage.html">Home</a></li>
+										<li><i class="bx bx-chevron-right"></i> <a href="about.html">About us</a></li>
+										<li><i class="bx bx-chevron-right"></i> <a href="enrollment.html">Enrollment</a></li>
+										<li><i class="bx bx-chevron-right"></i> <a href="results.html">Results</a></li>
+										<li><i class="bx bx-chevron-right"></i> <a href="departments.html">Departments</a></li>
+										<li><i class="bx bx-chevron-right"></i> <a href="boardMembers.html">School Board</a></li>
+										<li><i class="bx bx-chevron-right"></i> <a href="contact.html">Contact us</a></li>
+									</ul>
+								</div>
+								<div class="col"></div>
+								<div class="col-auto">
+									<h4>Our Motto</h4>
+									<p>Strive for Excellence</p><br>
+									<h4>Our Mission</h4>
+									<p>To be a world class institution in producing young men who are shaped wholistically</p><br>
+									<h4>Our Vision</h4>
+									<p>To be a world class institution in producing young men who are shaped physically, spiritually and academically.</p><br>
+								</div>
+								<div class="col"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="container d-md-flex py-4">
+
+						<div class="mx-auto text-center text-md-left">
+							<div class="copyright">
+								&copy; Copyright <strong><span>2020</span></strong>. All Rights Reserved
+							</div>
+
+						</div>
+						<div class="social-links text-center text-md-right pt-3 pt-md-0">
+							<a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+							<a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+							<a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+							<a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+							<a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+						</div>
+					</div>
+				</footer>
+				<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+				<script type="text/javascript" src="js/popper.min.js"></script>
+				<script type="text/javascript" src="js/bootstrap.min.js"></script>
+				<script type="text/javascript">
+
+				</script>
+			</body>
+			</html>
